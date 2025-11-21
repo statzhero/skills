@@ -23,7 +23,9 @@
       "description": "Collection of skills for tidyverse users and developers",
       "source": "./",
       "strict": false,
-      "skills": []
+      "skills": [
+        "./tidyverse/testing-r-packages"
+      ]
     }
   ]
 }
