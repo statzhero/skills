@@ -51,10 +51,8 @@ Install specific skill categories directly:
 ```
 /plugin install open-source@posit-dev-skills
 /plugin install r-lib@posit-dev-skills
-/plugin install tidyverse@posit-dev-skills
 /plugin install shiny@posit-dev-skills
 /plugin install quarto@posit-dev-skills
-/plugin install connect@posit-dev-skills
 ```
 
 Each command installs all skills in that category.
