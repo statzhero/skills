@@ -19,13 +19,20 @@
       ]
     },
     {
+      "name": "r-lib-skills",
+      "description": "Collection of skills for R package developers",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./r-lib/testing-r-packages"
+      ]
+    },
+    {
       "name": "tidyverse-skills",
       "description": "Collection of skills for tidyverse users and developers",
       "source": "./",
       "strict": false,
-      "skills": [
-        "./tidyverse/testing-r-packages"
-      ]
+      "skills": []
     }
   ]
 }

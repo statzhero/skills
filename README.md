@@ -14,13 +14,17 @@ Skills are automatically activated by Claude based on your task. Learn more at t
 
 ## Available Skills
 
-We anticipate the skills in the repository will grow over time to include categories like `tidyverse`, `shiny`, `quarto`, and `connect`. Below are the currently available skills:
-
 ### Open Source
 
 Open Source skills support internal open-source package workflows.
 
 - **[release-post](./open-source/release-post/)** - Create professional package release blog posts following Tidyverse or Shiny blog conventions, with support for both R and Python packages
+
+### R Package Development
+
+R package development skills for working with the r-lib ecosystem and modern R package workflows.
+
+- **[testing-r-packages](./r-lib/testing-r-packages/)** - Best practices for writing R package tests using testthat 3+, including test structure, expectations, fixtures, snapshots, mocking, and BDD-style testing
 
 ## Installation
 
@@ -42,6 +46,7 @@ Install specific skill categories directly:
 
 ```
 /plugin install open-source-skills@posit-dev-skills
+/plugin install r-lib-skills@posit-dev-skills
 /plugin install tidyverse-skills@posit-dev-skills
 /plugin install shiny-skills@posit-dev-skills
 /plugin install quarto-skills@posit-dev-skills
@@ -101,6 +106,7 @@ This repository organizes skills into categories to make it easier to find and i
 | Category | Description |
 |----------|-------------|
 | **open-source** | General open-source package development and maintenance |
+| **r-lib** | R package development with the r-lib ecosystem |
 | **tidyverse** | Tidyverse-specific package development |
 | **shiny** | Shiny app development and deployment |
 | **quarto** | Quarto document creation and publishing |

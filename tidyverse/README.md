@@ -1,10 +1,6 @@
 # Tidyverse Skills
 
-Skills specific to tidyverse package development and maintenance.
-
-## Available Skills
-
-- **[testing-r-packages](./testing-r-packages/)** - Best practices for writing R package tests using testthat 3+, including test structure, expectations, fixtures, snapshots, mocking, and BDD-style testing
+Skills specific to using tidyverse packages and tidyverse-specific package development patterns.
 
 ## Potential Skills
 
