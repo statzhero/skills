@@ -2,15 +2,7 @@
 
 A collection of Claude Skills for Posit development teams, including tools for package releases, tidyverse workflows, Shiny development, Quarto authoring, and Connect deployment.
 
-## About Claude Skills
-
-Claude Skills extend Claude's capabilities with specialized knowledge and workflows. Skills can be used in:
-
-- **Claude.ai**: Add skills from the marketplace or upload custom skills
-- **Claude Code**: Install skills to your local environment
-- **Claude API**: Load skills programmatically
-
-Skills are automatically activated by Claude based on your task. Learn more at the [Claude Skills documentation](https://support.claude.com/en/articles/12512180-using-skills-in-claude).
+Claude Skills extend Claude's capabilities with specialized knowledge and workflows. Skills are automatically activated by Claude based on your task and can be used in Claude.ai, Claude Code, or via the Claude API. Learn more at the [Claude Skills documentation](https://support.claude.com/en/articles/12512180-using-skills-in-claude).
 
 ## Available Skills
 
