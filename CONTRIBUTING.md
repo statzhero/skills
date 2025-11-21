@@ -191,7 +191,7 @@ Skills are organized by category plugins. Find the plugin that matches your skil
 
 ```json
 {
-  "name": "category-skills",
+  "name": "category",
   "description": "Collection of skills for [category purpose]",
   "source": "./",
   "strict": false,
@@ -206,7 +206,7 @@ Skills are organized by category plugins. Find the plugin that matches your skil
 
 ```json
 {
-  "name": "open-source-skills",
+  "name": "open-source",
   "description": "Collection of skills for general open-source package development and maintenance, including release post creation and changelog management",
   "source": "./",
   "strict": false,
@@ -221,7 +221,7 @@ Skills are organized by category plugins. Find the plugin that matches your skil
 
 ```json
 {
-  "name": "your-category-skills",
+  "name": "your-category",
   "description": "Collection of skills for [category purpose]",
   "source": "./",
   "strict": false,
