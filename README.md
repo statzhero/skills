@@ -1,0 +1,133 @@
+# Posit Claude Skills
+
+A collection of Claude Skills for Posit development teams, including tools for package releases, tidyverse workflows, Shiny development, Quarto authoring, and Connect deployment.
+
+## About Claude Skills
+
+Claude Skills extend Claude's capabilities with specialized knowledge and workflows. Skills can be used in:
+
+- **Claude.ai**: Add skills from the marketplace or upload custom skills
+- **Claude Code**: Install skills to your local environment
+- **Claude API**: Load skills programmatically
+
+Skills are automatically activated by Claude based on your task. Learn more at the [Claude Skills documentation](https://support.claude.com/en/articles/12512180-using-skills-in-claude).
+
+## Available Skills
+
+We anticipate the skills in the repository will grow over time to include categories like `tidyverse`, `shiny`, `quarto`, and `connect`. Below are the currently available skills:
+
+### Open Source
+
+Open Source skills support internal open-source package workflows.
+
+- **[release-post](./open-source/release-post/)** - Create professional package release blog posts following Tidyverse or Shiny blog conventions, with support for both R and Python packages
+
+## Installation
+
+### Claude Code
+
+#### Method 1: Add Marketplace
+
+Add this repository as a plugin marketplace in Claude Code:
+
+```
+/plugin marketplace add posit-dev/skills
+```
+
+Then browse and install the skill categories you need through the Claude Code UI.
+
+#### Method 2: Direct Installation
+
+Install specific skill categories directly:
+
+```
+/plugin install open-source-skills@posit-dev-skills
+/plugin install tidyverse-skills@posit-dev-skills
+/plugin install shiny-skills@posit-dev-skills
+/plugin install quarto-skills@posit-dev-skills
+/plugin install connect-skills@posit-dev-skills
+```
+
+Each command installs all skills in that category.
+
+#### Method 3: Manual Installation
+
+For customization or offline use:
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/posit-dev/skills.git
+   cd skills
+   ```
+
+2. Copy individual skills to your Claude Code skills directory:
+   ```bash
+   cp -r open-source/release-post ~/.config/claude-code/skills/
+   ```
+
+3. Or install all skills from a category:
+   ```bash
+   for skill in open-source/*/; do
+     cp -r "$skill" ~/.config/claude-code/skills/
+   done
+   ```
+
+### Claude.ai
+
+Skills can be uploaded to Claude.ai following the [Creating Custom Skills guide](https://support.claude.com/en/articles/12512198-creating-custom-skills).
+
+### Claude API
+
+Use the [Skills API](https://docs.claude.com/en/api/skills-guide) to programmatically load and manage skills in your applications.
+
+## Using Skills
+
+Once installed, Claude will automatically activate relevant skills based on your task. You don't need to explicitly invoke them.
+
+For example, with the `release-post` skill installed:
+
+```
+You: Help me write a release post for dplyr 1.2.0
+
+Claude: I'll help you create a release post. First, let me gather some information...
+```
+
+Claude will use the skill's knowledge to guide you through creating a properly formatted release post.
+
+## Skill Categories
+
+This repository organizes skills into categories to make it easier to find and install skills relevant to your work:
+
+| Category | Description |
+|----------|-------------|
+| **open-source** | General open-source package development and maintenance |
+| **tidyverse** | Tidyverse-specific package development |
+| **shiny** | Shiny app development and deployment |
+| **quarto** | Quarto document creation and publishing |
+| **connect** | Posit Connect deployment and management |
+
+## Contributing
+
+We welcome contributions! Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines on creating new skills.
+
+**We highly recommend using Anthropic's [skill-creator](https://github.com/anthropics/skills) skill** to help you build high-quality skills.
+
+## License
+
+This repository is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
+
+## Resources
+
+- [Claude Skills Overview](https://www.anthropic.com/news/skills)
+- [Using Skills in Claude](https://support.claude.com/en/articles/12512180-using-skills-in-claude)
+- [Creating Custom Skills](https://support.claude.com/en/articles/12512198-creating-custom-skills)
+- [Skills API Documentation](https://docs.claude.com/en/api/skills-guide)
+- [Anthropic's Official Skills Repository](https://github.com/anthropics/skills)
+
+## Support
+
+If you have questions or encounter issues, check the [Claude Skills documentation](https://support.claude.com/en/articles/12512180-using-skills-in-claude) or [open an issue](https://github.com/posit-dev/skills/issues/new) on GitHub.
+
+---
+
+**Built with ❤️ + ☕ + 🤖 at Posit**

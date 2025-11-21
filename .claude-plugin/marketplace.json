@@ -1,0 +1,29 @@
+{
+  "name": "posit-dev-skills",
+  "owner": {
+    "name": "Garrick Aden-Buie (Posit, PBC)",
+    "email": "garrick@posit.co"
+  },
+  "metadata": {
+    "description": "A collection of Claude Skills for Posit development teams, and open-source users including tools for tidyverse workflows.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "open-source-skills",
+      "description": "Collection of skills for general open-source package development and maintenance",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./open-source/release-post"
+      ]
+    },
+    {
+      "name": "tidyverse-skills",
+      "description": "Collection of skills for tidyverse users and developers",
+      "source": "./",
+      "strict": false,
+      "skills": []
+    }
+  ]
+}
