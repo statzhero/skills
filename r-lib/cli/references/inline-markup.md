@@ -137,8 +137,8 @@ User-friendly type descriptions with indefinite articles:
 
 ```r
 x <- data.frame()
-cli_text("You provided {.obj_type_friendly {x}}")
-#> You provided a data frame
+cli_text("{.var x} must be a vector, not {.obj_type_friendly {x}}")
+#> `x` must be a vector, not a data frame
 
 y <- 1:10
 cli_text("You provided {.obj_type_friendly {y}}")
