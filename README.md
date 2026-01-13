@@ -34,6 +34,12 @@ Skills for Quarto document creation and publishing.
 - **[brand-yml](./brand-yml/)** - Create and apply brand.yml files for consistent styling across Quarto projects, supporting HTML documents, dashboards, RevealJS presentations, Typst PDFs, and websites with automatic brand discovery and theme layering
 - **[authoring](quarto/README.md#quarto-authoring-skill)** - Comprehensive guidance for Quarto document authoring and R Markdown migration. Write new Quarto documents with best practices, convert R Markdown files, migrate bookdown/blogdown/xaringan/distill projects, and use Quarto-specific features like hashpipe syntax, cross-references, callouts, and extensions
 
+### Tidyverse
+
+Skills for tidyverse-style R development.
+
+- **[writing-tidy-r-code](./tidyverse/writing-tidy-r-code/)** - Modern tidyverse patterns, style guide, and migration guidance for R development. Covers native pipe usage, join_by() syntax, .by grouping, pick/across/reframe operations, tidy selection, stringr patterns, naming conventions, and migration from base R or older tidyverse APIs
+
 ## Installation
 
 ### Claude Code
@@ -57,6 +63,7 @@ Install specific skill categories directly:
 /plugin install r-lib@posit-dev-skills
 /plugin install shiny@posit-dev-skills
 /plugin install quarto@posit-dev-skills
+/plugin install tidyverse@posit-dev-skills
 ```
 
 Each command installs all skills in that category.
@@ -117,10 +124,10 @@ This repository organizes skills into categories to make it easier to find and i
 | **r-lib**       | R package development with the r-lib ecosystem          |
 | **shiny**       | Shiny app development and deployment (R and Python)     |
 | **quarto**      | Quarto document creation and publishing                 |
+| **tidyverse**   | Tidyverse-style R development                           |
 
 <!-- Future category ideas
 
-| **tidyverse** | Tidyverse-specific package development |
 | **connect** | Posit Connect deployment and management |
 -->
 
