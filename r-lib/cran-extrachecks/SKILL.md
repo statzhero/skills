@@ -303,42 +303,6 @@ This occurs when files are in `.Rbuildignore`. Solutions:
 1. Remove file from `.Rbuildignore`
 2. Use `usethis::use_code_of_conduct()` which generates sections without relative links
 
-### Handling Suggested Package Dependencies
-
-If CRAN runs `noSuggests` check, your package must work without Suggested packages installed.
-
-**In Examples**
-
-Entire example sections:
-```r
-#' @examplesIf rlang::is_installed("dplyr")
-#' library(dplyr)
-#' my_data %>% my_function()
-```
-
-Individual blocks:
-```r
-#' @examples
-#' if (rlang::is_installed("dplyr")) {
-#'   library(dplyr)
-#'   my_data %>% my_function()
-#' }
-```
-
-**In Tests**
-
-```r
-testthat::skip_if_not_installed("dplyr")
-```
-
-**Recursive Dependencies**
-
-Watch for recursive dependencies. If using `sf::read_sf()`, the tibble package is required but sf only `Suggests` it. Guard appropriately.
-
-**GitHub Action for Testing**
-
-Use [this GitHub Action](https://github.com/r-lib/actions/blob/v2-branch/examples/check-no-suggests.yaml) to test your package without suggested packages.
-
 ### Administrative Requirements
 
 **Copyright Holder Role**
